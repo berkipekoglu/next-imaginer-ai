@@ -4,7 +4,7 @@ import {applyRateLimiting} from "@/utils/rate-limiting";
 export const middleware = async (request) => {
     try {
         // rate limiting control
-        await applyRateLimiting(request, NextResponse);
+        //await applyRateLimiting(request, NextResponse);
     } catch (error) {
         return new NextResponse('Too many request', {
             status: 429
